@@ -6,9 +6,12 @@ header {
   align-items: center;
   margin-top: 1rem;
 }
-header h1, header p, header a {
+header h1,
+header p,
+header a {
   font-size: 1.7rem;
   margin: 1rem auto;
+  text-align: center;
 }
 header img {
   width: 25rem;
@@ -32,7 +35,8 @@ main section {
   width: fit-content;
   background-color: aliceblue;
 }
-main section p, main section a {
+main section p,
+main section a {
   margin: 1rem 0;
   font-size: 1.7rem;
 }
@@ -43,6 +47,7 @@ footer {
   flex-flow: column nowrap;
   align-items: center;
   padding: 5rem;
+  text-align: center;
 }
 footer p {
   font-size: 1rem;
