@@ -1,0 +1,56 @@
+/* Header */
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+header h1, header p, header a {
+  font-size: 1.7rem;
+  margin: 1rem auto;
+}
+header img {
+  width: 25rem;
+  border-radius: 50%;
+}
+
+/* Content */
+main {
+  margin-top: 1rem;
+}
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+main section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  width: fit-content;
+  background-color: aliceblue;
+}
+main section p, main section a {
+  margin: 1rem 0;
+  font-size: 1.7rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 5rem;
+}
+footer p {
+  font-size: 1rem;
+}
+
+/* Miscellaneous */
+hr {
+  width: 50%;
+  border: 0.1rem solid #000;
+  margin: 10rem auto;
+}
