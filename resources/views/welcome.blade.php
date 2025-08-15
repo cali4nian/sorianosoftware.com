@@ -135,7 +135,7 @@
 
             <div class="mx-auto overflow-hidden bg-gray-100 shadow-lg rounded-xl md:flex">
                 <div class="md:w-1/2">
-                    <img src="{{ asset('images/logoBDP.png'); }}" alt="Project Screenshot" class="object-cover w-full h-full rounded-full">
+                    <img src="{{ asset('images/logoBDP.PNG'); }}" alt="Project Screenshot" class="object-cover w-full h-full rounded-full">
                 </div>
                 <div class="p-8 md:w-1/2">
                     <h3 class="mb-4 text-2xl font-semibold">BackDownPunisher.com</h3>
@@ -170,7 +170,7 @@
             “Working with Soriano Software was a game changer. The site for BackDownPunisher.com turned out better than I imagined—fast, clean, and professional. The attention to detail and communication was top-tier.”
           </p>
           <div class="flex items-center justify-center space-x-4">
-            <img src="{{ asset('images/logoBDP.png'); }}" alt="Client photo"
+            <img src="{{ asset('images/logoBDP.PNG'); }}" alt="Client photo"
                 class="object-cover w-12 h-12 border-2 border-indigo-500 rounded-full">
             <div class="text-left">
               <p class="text-lg font-semibold">Kain</p>
