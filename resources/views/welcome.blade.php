@@ -50,7 +50,6 @@
             <a href="#contact" class="block transition hover:text-indigo-400">Contact</a>
         </div>
     </header>
-    <!-- End Navigation -->
 
     <!-- Header -->
     <header class="relative flex items-center justify-center h-screen overflow-hidden">
@@ -65,7 +64,7 @@
         <p class="mb-8 text-xl md:text-2xl">
             We turn bold visions into code—web, mobile, and desktop applications. Real solutions without the fluff.
         </p>
-        <div class="space-x-4">
+        <aside class="flex flex-row justify-center space-x-4">
             <a href="#services"
             class="inline-block px-8 py-4 text-lg font-semibold transition bg-indigo-500 rounded-lg hover:bg-indigo-600">
             Our Services
@@ -74,13 +73,12 @@
             class="inline-block px-8 py-4 text-lg border-2 border-indigo-500 rounded-lg hover:border-indigo-400">
             Contact Us
             </a>
-        </div>
+        </aside>
         </div>
         <div class="absolute flex justify-center w-full bottom-10">
         <a href="#services" class="text-4xl text-indigo-300 animate-bounce">↓</a>
         </div>
     </header>
-    <!-- End Header -->
 
     <!-- Services -->
     <section id="services" class="px-6 py-20 text-gray-900 bg-gray-100">
@@ -126,7 +124,6 @@
             </div>
         </div>
     </section>
-    <!-- End Services -->
 
     <!-- Portfolio -->
     <section id="portfolio" class="px-6 py-20 text-gray-900 bg-white">
@@ -134,8 +131,9 @@
             <h2 class="mb-12 text-4xl font-bold text-center">Project Spotlight</h2>
 
             <div class="mx-auto overflow-hidden bg-gray-100 shadow-lg rounded-xl md:flex">
-                <div class="md:w-1/2">
-                    <img src="{{ asset('images/logoBDP.PNG'); }}" alt="Project Screenshot" class="object-cover w-full h-full rounded-full">
+                <div class="w-full md:w-1/2">
+                    <img src="{{ asset('images/logoBDP.PNG') }}" alt="BackDownPunisher.com"
+                        class="object-cover w-full h-64 md:h-auto">
                 </div>
                 <div class="p-8 md:w-1/2">
                     <h3 class="mb-4 text-2xl font-semibold">BackDownPunisher.com</h3>
@@ -144,7 +142,7 @@
                     </p>
                     <ul class="mb-4 text-sm text-gray-600 list-disc list-inside">
                     <li><strong>Challenge:</strong> Build a clean, mobile-first brand site for a student-athlete with limited content.</li>
-                    <li><strong>Solution:</strong> Designed a responsive site with Laravel + Tailwind, integrated YouTube highlights and contact form.</li>
+                    <li><strong>Solution:</strong> Designed a responsive site with Laravel + Tailwind and embeded YouTube latest highlights video.</li>
                     <li><strong>Result:</strong> Site live in under 10 days; gained 1,200+ unique visitors in the first month with zero ad spend.</li>
                     </ul>
                     <div class="mb-4 text-sm text-gray-500">
@@ -159,7 +157,6 @@
 
         </div>
     </section>
-    <!-- End Portfolio -->
 
     <!-- Testimonials -->
     <section id="testimonials" class="px-6 py-20 text-white bg-gray-900">
@@ -169,18 +166,17 @@
           <p class="mb-6 text-xl italic">
             “Working with Soriano Software was a game changer. The site for BackDownPunisher.com turned out better than I imagined—fast, clean, and professional. The attention to detail and communication was top-tier.”
           </p>
-          <div class="flex items-center justify-center space-x-4">
+          <aside class="flex items-center justify-center space-x-4">
             <img src="{{ asset('images/logoBDP.PNG'); }}" alt="Client photo"
                 class="object-cover w-12 h-12 border-2 border-indigo-500 rounded-full">
             <div class="text-left">
               <p class="text-lg font-semibold">Kain</p>
               <p class="text-sm text-gray-400">Client – BackDownPunisher.com</p>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
-    <!-- End Testimonials -->
 
     <!-- About -->
     <section id="about" class="px-6 py-20 text-gray-900 bg-white">
@@ -194,7 +190,6 @@
         </p>
       </div>
     </section>
-    <!-- End About -->
 
     <!-- CTA -->
     <section id="contact" class="px-6 py-20 text-white bg-gray-900">
@@ -214,7 +209,6 @@
         </div>
       </div>
     </section>
-    <!-- End CTA -->
 
     <!-- Footer -->
     <footer class="px-6 py-10 text-gray-300 bg-gray-800">
@@ -252,7 +246,6 @@
         © 2025 Soriano Software. All rights reserved.
       </div>
     </footer>
-    <!-- End Footer -->
-     
+    
 </body>
 </html>
