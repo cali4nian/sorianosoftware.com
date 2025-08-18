@@ -14,46 +14,11 @@
 </head>
 <body class="text-white bg-gray-900">
     
-    <!-- Navigation -->
-    <header x-data="{ open: false }" class="absolute top-0 left-0 z-50 w-full bg-transparent">
-        <div class="flex items-center justify-between px-6 py-6 md:px-12">
-            <div class="flex items-center space-x-3">
-                <img src="{{ asset('images/logo.jpeg') }}" alt="Soriano Software Logo" class="w-auto h-10 rounded-full">
-            </div>
+    @include('navigation')
 
-            <!-- Desktop Nav -->
-            <nav class="hidden space-x-6 text-sm font-medium text-white md:flex">
-                <a href="#services" class="transition hover:text-indigo-400">Services</a>
-                <a href="#portfolio" class="transition hover:text-indigo-400">Portfolio</a>
-                <a href="#about" class="transition hover:text-indigo-400">About</a>
-                <a href="#contact" class="transition hover:text-indigo-400">Contact</a>
-            </nav>
-
-            <!-- Mobile Menu Button -->
-            <button @click="open = !open" class="text-white md:hidden focus:outline-none">
-                <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                <svg x-show="open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display: none;">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
-
-        <!-- Mobile Nav Menu -->
-        <div x-show="open" @click.away="open = false" class="px-6 py-4 space-y-4 text-white bg-gray-900 md:hidden">
-            <a href="#services" class="block transition hover:text-indigo-400">Services</a>
-            <a href="#portfolio" class="block transition hover:text-indigo-400">Portfolio</a>
-            <a href="#about" class="block transition hover:text-indigo-400">About</a>
-            <a href="#contact" class="block transition hover:text-indigo-400">Contact</a>
-        </div>
-    </header>
-
-    <!-- Header -->
-    <header class="relative flex items-center justify-center h-screen overflow-hidden">
-        <div class="absolute inset-0 opacity-75 bg-gradient-to-br from-indigo-800 via-purple-900 to-black"></div>
+    <!-- Landing Page First Section -->
+    <section class="relative flex items-center justify-center h-screen overflow-hidden">
+      <div class="absolute inset-0 opacity-75 bg-gradient-to-br from-indigo-800 via-purple-900 to-black"></div>
         <div class="relative z-10 max-w-3xl px-4 text-center">
             <h1 class="mb-2 text-5xl font-extrabold leading-tight md:text-6xl">
             Soriano Software
@@ -74,11 +39,8 @@
             Contact Us
             </a>
         </aside>
-        </div>
-        <div class="absolute flex justify-center w-full bottom-10">
-        <a href="#services" class="text-4xl text-indigo-300 animate-bounce">↓</a>
-        </div>
-    </header>
+      </div>
+    </section>
 
     <!-- Services -->
     <section id="services" class="px-6 py-20 text-gray-900 bg-gray-100">
@@ -210,42 +172,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="px-6 py-10 text-gray-300 bg-gray-800">
-      <div class="grid max-w-6xl grid-cols-1 gap-8 mx-auto text-sm md:grid-cols-3">
-        
-        <!-- Branding -->
-        <div>
-          <h3 class="mb-2 text-lg font-semibold text-white">Soriano Software</h3>
-          <p>Custom software solutions built in Fresno, CA. Focused on clean code, smart systems, and meaningful outcomes.</p>
-        </div>
-
-        <!-- Quick Links -->
-        <div>
-          <h4 class="mb-2 font-semibold text-white">Quick Links</h4>
-          <ul class="space-y-1">
-            <li><a href="#services" class="hover:underline">Services</a></li>
-            <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
-            <li><a href="#about" class="hover:underline">About</a></li>
-            <li><a href="#contact" class="hover:underline">Contact</a></li>
-            <li><a href="{{ route('terms') }}" class="hover:underline">Terms and Conditions</a></li>
-            <li><a href="{{ route('privacy') }}" class="hover:underline">Privacy Policy</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div>
-          <h4 class="mb-2 font-semibold text-white">Contact</h4>
-          <p>Email: <a href="mailto:info@sorianosoftware.com" class="underline">support@sorianosoftware.com</a></p>
-          <p>Phone: <a href="tel:5597779705" class="underline">559-777-9705</a></p>
-          <p>Fresno, California</p>
-        </div>
-      </div>
-      <!-- Bottom Bar -->
-      <div class="pt-6 mt-10 text-xs text-center text-gray-500 border-t border-gray-700">
-        © 2025 Soriano Software. All rights reserved.
-      </div>
-    </footer>
+    @include('footer')
     
 </body>
 </html>
