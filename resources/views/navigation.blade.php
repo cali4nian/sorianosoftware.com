@@ -33,9 +33,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            <a href="#services" class="text-2xl font-semibold transition hover:text-indigo-400">Services</a>
-            <a href="#portfolio" class="text-2xl font-semibold transition hover:text-indigo-400">Portfolio</a>
-            <a href="#about" class="text-2xl font-semibold transition hover:text-indigo-400">About</a>
-            <a href="#contact" class="text-2xl font-semibold transition hover:text-indigo-400">Contact</a>
+            <a href="#services" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">Services</a>
+            <a href="#portfolio" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">Portfolio</a>
+            <a href="#about" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">About</a>
+            <a href="#contact" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">Contact</a>
         </div>
     </header>
