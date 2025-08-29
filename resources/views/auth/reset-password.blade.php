@@ -10,8 +10,8 @@
         </p>
         <p class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
-            <x-text-input id="password" class="block w-full mt-1" type="password" name="password" required autocomplete="new-password" />
-            <x-input-error :messages="$errors->get('password')" class="mt-2" placeholder="Enter New Secret Password" />
+            <x-text-input id="password" class="block w-full mt-1" type="password" name="password" required autocomplete="new-password" placeholder="Enter New Secret Password" />
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </p>
         <p class="mt-4">
             <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
