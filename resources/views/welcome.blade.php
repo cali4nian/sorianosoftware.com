@@ -80,7 +80,7 @@
     <!-- Services -->
     <section id="services" class="px-6 py-20 text-gray-900 bg-gray-100">
         <div class="max-w-6xl mx-auto">
-            <h2 class="mb-12 text-4xl font-bold text-center">Our Services</h2>
+            <h2 class="mb-12 text-4xl font-bold text-center">Services</h2>
             <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div class="p-8 transition bg-white shadow rounded-xl hover:shadow-lg">
                     <h3 class="mb-4 text-2xl font-semibold">Web Development</h3>
@@ -118,6 +118,24 @@
                         From planning to post-launch—we guide your digital roadmap and stand by with ongoing support.
                     </p>
                 </div>
+        <div class="p-8 transition bg-white shadow rounded-xl hover:shadow-lg">
+          <h3 class="mb-4 text-2xl font-semibold">Remote IT Support</h3>
+          <p class="text-gray-600">
+            Fast, reliable remote troubleshooting and IT support for businesses and individuals—network, hardware, software, and security.
+          </p>
+        </div>
+        <div class="p-8 transition bg-white shadow rounded-xl hover:shadow-lg">
+          <h3 class="mb-4 text-2xl font-semibold">Modern Cloud Solutions</h3>
+          <p class="text-gray-600">
+            Scalable cloud infrastructure, migration, and management—AWS, Azure, Google Cloud, and more. Secure, cost-effective, and future-ready.
+          </p>
+        </div>
+        <div class="p-8 transition bg-white shadow rounded-xl hover:shadow-lg">
+          <h3 class="mb-4 text-2xl font-semibold">Cybersecurity & Compliance</h3>
+          <p class="text-gray-600">
+            Protect your data and systems with proactive security audits, compliance solutions, and ongoing monitoring.
+          </p>
+        </div>
             </div>
         </div>
     </section>

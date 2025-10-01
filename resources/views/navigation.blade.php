@@ -17,8 +17,8 @@
                     <a href="{{ route('home'); }}#services" class="transition hover:text-indigo-400">Back to landing page</a>
                 @endif
                 @guest
-                    <a href="{{ route('register'); }}" class="transition hover:text-indigo-400">Register</a>
-                    <a href="{{ route('login'); }}" class="transition hover:text-indigo-400">Login</a>
+                    {{-- <a href="{{ route('register'); }}" class="transition hover:text-indigo-400">Register</a>
+                    <a href="{{ route('login'); }}" class="transition hover:text-indigo-400">Login</a> --}}
                 @endguest
                 @auth
                     <a href="{{ route('dashboard'); }}" class="transition hover:text-indigo-400">Dashboard</a>
@@ -53,8 +53,8 @@
                 <a href="{{ route('home'); }}#services" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">Back to landing page</a>    
             @endif
             @guest
-                <a href="{{ route('register'); }}" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">Register</a>
-                <a href="{{ route('login'); }}" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">Login</a>
+                {{-- <a href="{{ route('register'); }}" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">Register</a>
+                <a href="{{ route('login'); }}" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">Login</a> --}}
             @endguest
             @auth
                 <a href="{{ route('dashboard'); }}" @click="open = false" class="text-2xl font-semibold transition hover:text-indigo-400">Dashboard</a>
